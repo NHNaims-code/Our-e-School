@@ -1,0 +1,88 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+   }
+   
+   h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+   }
+.top-section{
+    background-color: #F0FFF0;
+    height: 570px;
+    margin-bottom: 100px;
+}
+.container{
+    margin-bottom: 100px;
+}
+.my-green-btn, #active{
+    background-color: #21B573;
+    border: none;
+    padding: 5px 20px;
+    color: white;
+    border-radius: 33px;
+}
+.my-color-green{
+    color: #21B573;
+}
+
+.card{
+    border: none;
+    box-shadow: 5px 5px 10px lightgray;
+    cursor: pointer;
+}
+
+/* subject section's card */
+.subject img{
+    width: 25%;
+    padding-top: 35px;
+}
+.subject .card-body{
+    padding: 20px 0 0 0;
+}
+.subject .card-body h5, .subject .card-body p{
+    margin: 0;
+    padding: 0;
+}
+.subject .card{
+    padding: 40px 20px;
+    background-color: #F0FFF0;
+}
+
+/* course section's card */
+.courses .card img{
+    padding: 20px;
+}
+.courses .card-footer{
+    background-color: white;
+    border: none;
+}
+.testimonial p{
+    margin-bottom: 0;
+}
+
+h2{
+    margin: 50px 0px;
+}
+footer li{
+    list-style: none;
+    line-height: 1.8rem;
+}
+footer ul li:first-child{
+    font-size: large;
+    color: white;
+}
+footer{
+    background-color: #282531;
+    color: lightgray;
+    font-size: smaller;
+    padding: 50px;
+}
+footer p{
+    margin-bottom: 1rem;
+    margin: 50px;
+    text-align: justify;
+}
+footer .copyright{
+    margin: 0;
+    padding: 0;
+}
