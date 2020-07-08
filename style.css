@@ -40,6 +40,7 @@ body {
 }
 
 /* subject section's card */
+
 .subject img{
     width: 30%;
     /* padding-top: 35px; */
@@ -72,7 +73,7 @@ body {
     margin-bottom: 0;
 }
 .testimonial{
-    margin: 170px;
+    margin: 170px auto;
 }
 
 h2{
@@ -113,6 +114,81 @@ footer .copyright{
     padding: 0;
 }
 
-@media (min-width: 576px){
+
+/* extra */
+.nav li{
+    padding: 8px 0px 8px 14px;
+    margin: 0px;
+}
+/* 
+@media (max-height: 320px){
+
+}
+@media (max-height: 414px){
+    
+}
+@media (max-height: 703px){
+
+}
+@media (max-height: 768px){
+
+} */
+
+@media (max-width: 373px){
+    body{
+        text-align: center;
+    }
+    h1{
+        font-size: 1.5rem;
+        line-height: 0.8rem;
+        text-align: center;
+    }
+    h2{
+        font-size: 1.35rem;
+    }
+    h5{
+        font-size: 0.85rem;
+    }
+    
+    h6, p{
+        font-size: 0.7rem;
+    }
+    .subject{
+        margin-top: 100px;
+    }
+    .testimonial{
+        margin: 0px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 380px) and (max-width: 575px) {  
+    .subject{
+        margin-top: 300px;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .testimonial{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px){
+    
+}
+@media (max-width: 992px){
+
+}
+@media (max-width: 1200px){
+
+}
+@media (max-width: 768px){
 
 }
