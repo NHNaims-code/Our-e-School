@@ -22,10 +22,16 @@ body {
 .container{
     margin-bottom: 100px;
 }
-.my-green-btn, #active{
+.my-green-btn{
     background-color: #21B573;
     border: none;
     padding: 5px 20px;
+    color: white;
+    border-radius: 33px;
+}
+#active{
+    background-color: #21B573;
+    border: none;
     color: white;
     border-radius: 33px;
 }
@@ -40,10 +46,21 @@ body {
 }
 
 /* subject section's card */
-
+.subject .card{
+    padding: 40px 20px;
+    background-color: #F0FFF0;
+    border: none;
+    cursor: pointer;
+    box-shadow: none;
+}
+.subject .card:hover{
+    border: none;
+    box-shadow: 5px 5px 10px lightgray;
+    cursor: pointer;
+    background-color: white;
+}
 .subject img{
     width: 30%;
-    /* padding-top: 35px; */
 }
 .subject .card-body{
     padding: 20px 0 0 0;
@@ -52,10 +69,6 @@ body {
 .subject .card-body h5, .subject .card-body p{
     margin: 0;
     padding: 0;
-}
-.subject .card{
-    padding: 40px 20px;
-    background-color: #F0FFF0;
 }
 
 /* course section's card */
@@ -75,6 +88,43 @@ body {
 .testimonial{
     margin: 170px auto;
 }
+.feedback{
+    width: 100%;
+    height: 500px;
+    background-color: #F0FFF0;
+}
+.feedback img{
+    width: 20%;
+    margin: 20px;
+}
+.feedback p{
+    text-align: center;
+    width: 50%;
+}
+.sector-title{
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+}
+.feedback h5{
+    font-size: 3rem;
+}
+.carousel-indicators .active{
+    background-color: tomato;
+}
+.carousel-indicators li{
+    background-color: rgb(44, 253, 89);
+}
+.highlight-line{
+    height: 5px;
+    width: 150px;
+    background-image: linear-gradient(270deg, #67ff67af, #4ff84fa9);
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+.author{
+    margin-bottom: 10px;
+}
+
 
 h2{
     margin: 50px 0px;
@@ -114,32 +164,17 @@ footer .copyright{
     padding: 0;
 }
 
-
-/* extra */
 .nav li{
     padding: 8px 0px 8px 14px;
     margin: 0px;
 }
-/* 
-@media (max-height: 320px){
-
-}
-@media (max-height: 414px){
-    
-}
-@media (max-height: 703px){
-
-}
-@media (max-height: 768px){
-
-} */
-
+/* ------------------------------------------------------------------responsive area-------------------------------------------------------------- */
 @media (max-width: 373px){
     body{
         text-align: center;
     }
     h1{
-        font-size: 1.5rem;
+        font-size: 2rem;
         line-height: 0.8rem;
         text-align: center;
     }
@@ -153,6 +188,11 @@ footer .copyright{
     h6, p{
         font-size: 0.7rem;
     }
+    .top-section{
+        background-color: #F0FFF0;
+        height: 676px;
+        margin-bottom: 100px;
+    }
     .subject{
         margin-top: 100px;
     }
@@ -161,6 +201,16 @@ footer .copyright{
         padding-bottom: 100px;
         display: flex;
         flex-direction: column;
+    }
+    .feedback{
+        height: 275px;
+    }
+    .feedback h5{
+        font-size: 2rem;
+    }
+    footer ul{
+        
+        padding-left: 0px;
     }
 }
 
@@ -176,19 +226,38 @@ footer .copyright{
         margin: 0;
         padding: 0;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-@media (max-width: 768px){
-    
+@media (min-width: 576px) and (max-width: 768px){
+    .subject{
+        margin-top: 300px;
+    }
+    h5{
+        font-size: 0.8rem;
+    }
+    h6{
+        font-size: 0.5rem;
+    }
+    .my-green-btn{
+        background-color: #21B573;
+        border: none;
+        padding: 5px 20px;
+        color: white;
+        border-radius: 33px;
+        font-size: 0.77rem;
+    }
 }
-@media (max-width: 992px){
-
-}
-@media (max-width: 1200px){
-
-}
-@media (max-width: 768px){
-
+@media (min-width: 769px) and  (max-width: 992px){
+    h1{
+        font-size: 2.3rem;
+    }
+   h5{
+       font-size: 0.91rem;
+   }
+   h6{
+       font-size: 0.75rem;
+   }
 }
