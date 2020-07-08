@@ -1,14 +1,22 @@
 body {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #413960;
    }
    
-   h1, h2, h3, h4, h5, h6 {
-    font-weight: 500;
+   h1{
+    font-weight: 900;
+    line-height: 2rem;
+    margin: 30px 0px;
    }
+   p{
+       font-size: small;
+       color: #585859;
+   }
+
 .top-section{
     background-color: #F0FFF0;
-    height: 570px;
+    height: 576px;
     margin-bottom: 100px;
 }
 .container{
@@ -32,12 +40,14 @@ body {
 }
 
 /* subject section's card */
+
 .subject img{
-    width: 25%;
-    padding-top: 35px;
+    width: 30%;
+    /* padding-top: 35px; */
 }
 .subject .card-body{
     padding: 20px 0 0 0;
+    margin-top: 10px;
 }
 .subject .card-body h5, .subject .card-body p{
     margin: 0;
@@ -49,6 +59,9 @@ body {
 }
 
 /* course section's card */
+.courses .my-green-btn{
+    margin-top: 40px;
+}
 .courses .card img{
     padding: 20px;
 }
@@ -59,6 +72,9 @@ body {
 .testimonial p{
     margin-bottom: 0;
 }
+.testimonial{
+    margin: 170px auto;
+}
 
 h2{
     margin: 50px 0px;
@@ -67,15 +83,26 @@ footer li{
     list-style: none;
     line-height: 1.8rem;
 }
-footer ul li:first-child{
-    font-size: large;
+footer a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 400;
+}
+footer a:hover{
     color: white;
+    text-decoration: none;
+}
+footer ul li:first-child{
+    font-size: medium;
+    color: white;
+    font-weight: 500;
 }
 footer{
     background-color: #282531;
-    color: lightgray;
-    font-size: smaller;
+    font-size: small;
+    color: gray;
     padding: 50px;
+    font-weight: 400;
 }
 footer p{
     margin-bottom: 1rem;
@@ -85,4 +112,83 @@ footer p{
 footer .copyright{
     margin: 0;
     padding: 0;
+}
+
+
+/* extra */
+.nav li{
+    padding: 8px 0px 8px 14px;
+    margin: 0px;
+}
+/* 
+@media (max-height: 320px){
+
+}
+@media (max-height: 414px){
+    
+}
+@media (max-height: 703px){
+
+}
+@media (max-height: 768px){
+
+} */
+
+@media (max-width: 373px){
+    body{
+        text-align: center;
+    }
+    h1{
+        font-size: 1.5rem;
+        line-height: 0.8rem;
+        text-align: center;
+    }
+    h2{
+        font-size: 1.35rem;
+    }
+    h5{
+        font-size: 0.85rem;
+    }
+    
+    h6, p{
+        font-size: 0.7rem;
+    }
+    .subject{
+        margin-top: 100px;
+    }
+    .testimonial{
+        margin: 0px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 380px) and (max-width: 575px) {  
+    .subject{
+        margin-top: 300px;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .testimonial{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px){
+    
+}
+@media (max-width: 992px){
+
+}
+@media (max-width: 1200px){
+
+}
+@media (max-width: 768px){
+
 }
